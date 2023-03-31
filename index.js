@@ -4,10 +4,10 @@
 Натискання на кнопку "SHOW ME" має виводити значення з поля введення (дивіться на елементи в html-розмітці)
 */
 
-const btnEl = document.querySelector("#alertButton");
-const inputEl = document.querySelector("#alertInput");
+// const btnEl = document.querySelector("#alertButton");
+// const inputEl = document.querySelector("#alertInput");
 
-btnEl.addEventListener("click", () => alert(inputEl.value)) 
+// btnEl.addEventListener("click", () => alert(inputEl.value)) 
 
 
 //TODO:==============================================
@@ -16,6 +16,35 @@ btnEl.addEventListener("click", () => alert(inputEl.value))
 Після натискання кнопки "SWAP ME" здійснюється обмін вмістом між двома інпутами.
 Ви можете натиснути на неї кілька разів або вручну змінити вміст інпутів.
 */
+
+// const btnEl = document.querySelector("#swapButton")
+// const inputLeftEl = document.querySelector("#leftSwapInput");
+// const inputRightEl = document.querySelector("#rightSwapInput");
+
+// ====
+// btnEl.addEventListener("click", handleClick);
+// function handleClick() {
+//     const left = inputLeftEl.value;
+//     const right = inputRightEl.value;
+
+//     inputLeftEl.value = right;
+//     inputRightEl.value = left;
+// }
+
+// ====
+// const test = "sdfsdfsdf"
+// btnEl.addEventListener("click", handleClick(test));
+// function handleClick(a) {
+//     return function () {
+//         const left = inputLeftEl.value;
+//         const right = inputRightEl.value;
+
+//         inputLeftEl.value = right;
+//         inputRightEl.value = left;
+//         console.log(a)
+//     }
+// }
+  
 
 //TODO:==============================================
 /*
