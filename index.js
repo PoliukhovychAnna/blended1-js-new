@@ -71,6 +71,32 @@ function onPasswordButtonClick() {
 Кнопка "Зменшити" робить квадрат менше на 10 пікселів,  "Збільшити" - більше на 10 пікселів.
 */
 
+const boxEl = document.querySelector("#box");
+const btnDecreaseEl = document.querySelector("#decrease");
+const btnIncreaseEl = document.querySelector("#increase");
+let size = parseInt(getComputedStyle(boxEl).width)
+
+btnDecreaseEl.addEventListener("click", decrease);
+btnIncreaseEl.addEventListener("click", increase);
+
+function decrease() {
+    size -= 10;
+    console.log(size);
+    boxEl.style.width = size + "px";
+    boxEl.style.height = size + "px";
+    
+}
+
+function increase() {
+      size += 10;
+      console.log(size);
+      boxEl.style.width = size + "px";
+      boxEl.style.height = size + "px";
+ }
+
+
+
+
 //TODO:==============================================
 /*
 Завдання 5
