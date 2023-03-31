@@ -7,8 +7,7 @@
 // const btnEl = document.querySelector("#alertButton");
 // const inputEl = document.querySelector("#alertInput");
 
-// btnEl.addEventListener("click", () => alert(inputEl.value)) 
-
+// btnEl.addEventListener("click", () => alert(inputEl.value))
 
 //TODO:==============================================
 /*
@@ -44,7 +43,6 @@
 //         console.log(a)
 //     }
 // }
-  
 
 //TODO:==============================================
 /*
@@ -53,6 +51,19 @@
 "Розкрити", при повторному натисканні текст знову стає доступним
 і кнопка набуває початкового вигляду.
 */
+const passwordInputEl = document.querySelector("#passwordInput");
+const passwordButtonEl = document.querySelector("#passwordButton");
+
+passwordButtonEl.addEventListener("click", onPasswordButtonClick);
+function onPasswordButtonClick() {
+  if (passwordButtonEl.textContent === "Розкрити") {
+    passwordInputEl.type = "text";
+    passwordButtonEl.textContent = "Скрыть";
+    return;
+  }
+  passwordButtonEl.textContent = "Розкрити";
+  passwordInputEl.type = "password";
+}
 
 //TODO:==============================================
 /*
