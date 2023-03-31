@@ -51,19 +51,19 @@
 "Розкрити", при повторному натисканні текст знову стає доступним
 і кнопка набуває початкового вигляду.
 */
-const passwordInputEl = document.querySelector("#passwordInput");
-const passwordButtonEl = document.querySelector("#passwordButton");
+// const passwordInputEl = document.querySelector("#passwordInput");
+// const passwordButtonEl = document.querySelector("#passwordButton");
 
-passwordButtonEl.addEventListener("click", onPasswordButtonClick);
-function onPasswordButtonClick() {
-  if (passwordButtonEl.textContent === "Розкрити") {
-    passwordInputEl.type = "text";
-    passwordButtonEl.textContent = "Скрыть";
-    return;
-  }
-  passwordButtonEl.textContent = "Розкрити";
-  passwordInputEl.type = "password";
-}
+// passwordButtonEl.addEventListener("click", onPasswordButtonClick);
+// function onPasswordButtonClick() {
+//   if (passwordButtonEl.textContent === "Розкрити") {
+//     passwordInputEl.type = "text";
+//     passwordButtonEl.textContent = "Скрыть";
+//     return;
+//   }
+//   passwordButtonEl.textContent = "Розкрити";
+//   passwordInputEl.type = "password";
+// }
 
 //TODO:==============================================
 /*
@@ -71,28 +71,28 @@ function onPasswordButtonClick() {
 Кнопка "Зменшити" робить квадрат менше на 10 пікселів,  "Збільшити" - більше на 10 пікселів.
 */
 
-const boxEl = document.querySelector("#box");
-const btnDecreaseEl = document.querySelector("#decrease");
-const btnIncreaseEl = document.querySelector("#increase");
-let size = parseInt(getComputedStyle(boxEl).width)
+// const boxEl = document.querySelector("#box");
+// const btnDecreaseEl = document.querySelector("#decrease");
+// const btnIncreaseEl = document.querySelector("#increase");
+// let size = parseInt(getComputedStyle(boxEl).width)
 
-btnDecreaseEl.addEventListener("click", decrease);
-btnIncreaseEl.addEventListener("click", increase);
+// btnDecreaseEl.addEventListener("click", decrease);
+// btnIncreaseEl.addEventListener("click", increase);
 
-function decrease() {
-    size -= 10;
-    console.log(size);
-    boxEl.style.width = size + "px";
-    boxEl.style.height = size + "px";
+// function decrease() {
+//     size -= 10;
+//     console.log(size);
+//     boxEl.style.width = size + "px";
+//     boxEl.style.height = size + "px";
     
-}
+// }
 
-function increase() {
-      size += 10;
-      console.log(size);
-      boxEl.style.width = size + "px";
-      boxEl.style.height = size + "px";
- }
+// function increase() {
+//       size += 10;
+//       console.log(size);
+//       boxEl.style.width = size + "px";
+//       boxEl.style.height = size + "px";
+//  }
 
 
 
@@ -114,6 +114,18 @@ function increase() {
 Натиснувши кнопку "Подвоювати", збільшити значення
 у кожному елементі списку у 2 рази
 */
+
+// const itemEl = document.querySelectorAll(".listItem");
+// const multplBtnEl = document.querySelector("#double");
+
+// multplBtnEl.addEventListener("click", double)
+
+// function double() {
+//   itemEl.forEach(item => {
+//     item.textContent = Number(item.textContent) * 2;
+//   })
+// }
+
 
 //TODO:==============================================
 /*
